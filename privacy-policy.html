@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - GitHub Custom Filters</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        line-height: 1.6;
+        background: #0a0a0a;
+        min-height: 100vh;
+        color: #e5e5e5;
+      }
+
+      .container {
+        background: #111111;
+        border: 1px solid #2a2a2a;
+        border-radius: 8px;
+        padding: 60px;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #2a2a2a;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        color: #888888;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+
+      .version-badge {
+        display: inline-block;
+        background: #1a1a1a;
+        border: 1px solid #333333;
+        color: #888888;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        margin-top: 16px;
+        font-weight: 500;
+      }
+
+      h2 {
+        color: #ffffff;
+        margin-top: 48px;
+        margin-bottom: 24px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        position: relative;
+      }
+
+      h2:first-of-type {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: #cccccc;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      ul {
+        margin: 24px 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      li {
+        margin: 16px 0;
+        padding-left: 32px;
+        position: relative;
+        color: #cccccc;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #666666;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .highlight {
+        background: #1a1a1a;
+        border: 1px solid #2a2a2a;
+        padding: 32px;
+        border-radius: 6px;
+        margin: 32px 0;
+        border-left: 3px solid #4a9eff;
+      }
+
+      .highlight h2 {
+        margin-top: 0;
+        color: #4a9eff;
+      }
+
+      .section {
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #1a1a1a;
+      }
+
+      .section:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .contact-section {
+        background: #1a1a1a;
+        border: 1px solid #2a2a2a;
+        padding: 40px;
+        border-radius: 6px;
+        margin-top: 48px;
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        margin-top: 0;
+        color: #ffffff;
+      }
+
+      .last-updated {
+        text-align: center;
+        margin-top: 48px;
+        padding-top: 32px;
+        border-top: 1px solid #2a2a2a;
+        color: #666666;
+        font-size: 0.9rem;
+        font-weight: 400;
+      }
+
+      .footer-note {
+        background: #0a0a0a;
+        border: 1px solid #1a1a1a;
+        padding: 24px;
+        border-radius: 6px;
+        margin-top: 32px;
+        text-align: center;
+        color: #888888;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 30px 15px;
+        }
+
+        .container {
+          padding: 40px 30px;
+        }
+
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        .highlight {
+          padding: 24px;
+        }
+
+        .contact-section {
+          padding: 30px 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">GitHub Custom Filters Extension</p>
+        <div class="version-badge">Version 1.0</div>
+      </div>
+
+      <div class="highlight">
+        <h2>Data Collection and Usage</h2>
+        <p>
+          This extension does not collect, transmit, or share any personal data
+          with external servers. Your privacy is our priority.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Local Storage</h2>
+        <p>
+          The extension uses Chrome's local storage to save your custom filter
+          configurations. This data includes:
+        </p>
+        <ul>
+          <li>Filter names you create (e.g., "My PRs", "Bug Reports")</li>
+          <li>GitHub search queries you save (e.g., "is:pr author:@me")</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Data Location</h2>
+        <p>
+          All data is stored locally on your device and is not transmitted to
+          any external servers. If you have Chrome sync enabled, this data may
+          be synchronized across your other Chrome browsers, but it remains
+          under your control.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Third-Party Access</h2>
+        <p>
+          No third parties have access to your data. The extension only
+          interacts with GitHub.com to provide the filtering functionality.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Data Deletion</h2>
+        <p>You can delete your data at any time by:</p>
+        <ul>
+          <li>Removing individual filters through the extension popup</li>
+          <li>Uninstalling the extension (which removes all stored data)</li>
+        </ul>
+      </div>
+
+      <div class="contact-section">
+        <h2>Contact Information</h2>
+        <p>
+          If you have questions about this privacy policy, please contact the
+          developer through the Chrome Web Store listing.
+        </p>
+      </div>
+
+      <div class="footer-note">
+        This privacy policy is effective as of the date listed below and will
+        remain in effect except with respect to any changes in its provisions in
+        the future.
+      </div>
+
+      <p class="last-updated">Last updated: January 2025</p>
+    </div>
+  </body>
+</html>
